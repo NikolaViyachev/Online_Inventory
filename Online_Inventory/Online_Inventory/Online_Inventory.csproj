@@ -11,4 +11,7 @@
   <ItemGroup>
     <Content Remove="wwwroot\favicon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="IgniteUI.Blazor.Trial" Version="23.2.97" />
+  </ItemGroup>
 </Project>

@@ -30,3 +30,6 @@
 /Users/nikolaviyachev/Documents/Progress/Online_Inventory/Online_Inventory/Online_Inventory/obj/Debug/net7.0/Online_Inventory.pdb
 /Users/nikolaviyachev/Documents/Progress/Online_Inventory/Online_Inventory/Online_Inventory/obj/Debug/net7.0/Online_Inventory.genruntimeconfig.cache
 /Users/nikolaviyachev/Documents/Progress/Online_Inventory/Online_Inventory/Online_Inventory/obj/Debug/net7.0/ref/Online_Inventory.dll
+/Users/nikolaviyachev/Documents/Progress/Online_Inventory/Online_Inventory/Online_Inventory/bin/Debug/net7.0/IgniteUI.Blazor.dll
+/Users/nikolaviyachev/Documents/Progress/Online_Inventory/Online_Inventory/Online_Inventory/obj/Debug/net7.0/jsmodules/jsmodules.build.manifest.json
+/Users/nikolaviyachev/Documents/Progress/Online_Inventory/Online_Inventory/Online_Inventory/obj/Debug/net7.0/Online_Inventory.csproj.CopyComplete

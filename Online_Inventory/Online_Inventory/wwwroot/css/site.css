@@ -67,3 +67,7 @@ a, .btn-link {
         content: "An error has occurred."
     }
 
+td {
+    vertical-align: middle;
+    text-align: center;
+}

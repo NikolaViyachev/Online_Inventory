@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "M5X/5uW6/fTAxsvk5oEz/l6nl8TdIRBlG2EUKc5W8De7VEKWmCtHRwIimay0NdUvXVIh/9p5NceyhQQcPczJ+A==",
+  "dgSpecHash": "Fx5RlCu4itSehgcNBs1F5RpJ0OUuLi33YzRLJTzxlCvHA53ImXZZRh/s07aYmAkPcApl4/yV3CNlLGi3sVoDTQ==",
   "success": true,
   "projectFilePath": "/Users/nikolaviyachev/Documents/Progress/Online_Inventory/Online_Inventory/Online_Inventory/Online_Inventory.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/nikolaviyachev/.nuget/packages/igniteui.blazor.trial/23.2.97/igniteui.blazor.trial.23.2.97.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.aspnetcore.authorization/7.0.0/microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.aspnetcore.components/7.0.0/microsoft.aspnetcore.components.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.aspnetcore.components.analyzers/7.0.0/microsoft.aspnetcore.components.analyzers.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.aspnetcore.components.forms/7.0.0/microsoft.aspnetcore.components.forms.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.aspnetcore.components.web/7.0.0/microsoft.aspnetcore.components.web.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.aspnetcore.metadata/7.0.0/microsoft.aspnetcore.metadata.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/microsoft.jsinterop/7.0.0/microsoft.jsinterop.7.0.0.nupkg.sha512",
+    "/Users/nikolaviyachev/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
