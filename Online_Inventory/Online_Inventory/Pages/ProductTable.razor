@@ -1,0 +1,86 @@
+﻿@page "/producttable"
+
+<h1>Product Table</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Country of Origin</th>
+            <th>Price in BGN</th>
+            <th>Quantity</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Products)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td><img src="/@product.Image" width="70" height="80"/></td>
+                <td>@product.Name</td>
+                <td>@product.Category</td>
+                <td>@product.CountryOfOrigin</td>
+                <td>@product.Price</td>
+                @switch (product.Quantity)
+                {
+                    case >10:
+                        <td style="background-color: #00CC33">@product.Quantity</td>
+                        break;
+                    case >5:
+                        <td style="background-color: yellow">@product.Quantity</td>
+                        break;
+                    case > 0:
+                        <td style="background-color: #ff6600">@product.Quantity</td>
+                        break;
+                    case 0:
+                        <td style="background-color: #ff1e00">@product.Quantity</td>
+                        break;
+                    default:
+                        break;
+                 }
+                <td>@product.Notes</td>
+            </tr>
+         }
+    </tbody>
+</table>
+
+@code {
+    List<Product> Products = new List<Product>
+    {
+        new Product { Id = 1, Image = "Milk_500ml.png", Name = "Milk 500ml", Category = "Dairy", CountryOfOrigin = "Bulgaria", Price = 2.3, Quantity = 21, Notes = "Fat content - 3.6%" },
+        new Product { Id = 2, Image = "Milk_1000ml.png", Name = "Milk 1000ml", Category = "Dairy", CountryOfOrigin = "Bulgaria", Price = 3.5, Quantity = 25, Notes = "Fat content - 3.6%" },
+        new Product { Id = 3, Image = "Coca-Cola_250ml.png", Name = "Coca-Cola 250ml", Category = "Drinks", CountryOfOrigin = "USA", Price = 1.2, Quantity = 17 },
+        new Product { Id = 4, Image = "Coca-Cola-Zero_250ml.png", Name = "Coca-Cola Zero 250ml", Category = "Drinks", CountryOfOrigin = "USA", Price = 1.2, Quantity = 19 },
+        new Product { Id = 5, Image = "Coca-Cola_500ml.png", Name = "Coca-Cola 500ml", Category = "Drinks", CountryOfOrigin = "USA", Price = 2, Quantity = 32 },
+        new Product { Id = 6, Image = "Coca-Cola-Zero_500ml.png", Name = "Coca-Cola Zero 500ml", Category = "Drinks", CountryOfOrigin = "USA", Price = 2, Quantity = 0 },
+        new Product { Id = 7, Image = "Coca-Cola_1500ml.png", Name = "Coca-Cola 1500ml", Category = "Drinks", CountryOfOrigin = "USA", Price = 3.5, Quantity = 4 },
+        new Product { Id = 8, Image = "Coca-Cola-Zero_1500ml.png", Name = "Coca-Cola Zero 1500ml", Category = "Drinks", CountryOfOrigin = "USA", Price = 3.5, Quantity = 14 },
+        new Product { Id = 9, Image = "White_Cheese_cow.png", Name = "White cheese 800g", Category = "Dairy", CountryOfOrigin = "Bulgaria", Price = 14, Quantity = 13, Notes = "From cow's milk" },
+        new Product { Id = 10, Image = "White_Cheese_goat.png", Name = "White cheese 800g", Category = "Dairy", CountryOfOrigin = "Bulgaria", Price = 17, Quantity = 8, Notes = "From goat's milk" },
+        new Product { Id = 11, Image = "White_Bread_500g.png", Name = "White Bread 500g", Category = "Grain Products", CountryOfOrigin = "Greece", Price = 3.2, Quantity = 18},
+        new Product { Id = 12, Image = "White_Bread_1000g.png", Name = "White Bread 1000g", Category = "Grain Products", CountryOfOrigin = "Bulgaria", Price = 5.2, Quantity = 12},
+        new Product { Id = 13, Image = "Chiabatta.png", Name = "Ciabatta 500g", Category = "Grain Products", CountryOfOrigin = "Italy", Price = 4.8, Quantity = 21},
+        new Product { Id = 14, Image = "Pretzel.png", Name = "Pretzel 300g", Category = "Grain Products", CountryOfOrigin = "Germany", Price = 2.6, Quantity = 3 },
+        new Product { Id = 15, Image = "6_eggs_pack.png", Name = "6 eggs pack", Category = "Eggs", CountryOfOrigin = "Romania", Price = 1.8, Quantity = 7},
+        new Product { Id = 16, Image = "12_eggs_pack.png", Name = "12 eggs pack", Category = "Eggs", CountryOfOrigin = "Albania", Price = 2.6, Quantity = 27},
+        new Product { Id = 17, Image = "Linguini.png", Name = "Linguini 500g pack", Category = "Grain Products", CountryOfOrigin = "UK", Price = 6.9, Quantity = 14},
+        new Product { Id = 18, Image = "Fusilli.png", Name = "Fusili 500g pack", Category = "Grain Products", CountryOfOrigin = "UK", Price = 6.9, Quantity = 0},
+        new Product { Id = 19, Image = "Tagliatelli.png", Name = "Tagliatelli 600g pack", Category = "Grain Products", CountryOfOrigin = "Italy", Price = 8.1, Quantity = 0, Notes = "Fresh Pasta" },
+        new Product { Id = 20, Image = "Sauvignon_Blanc.png", Name = "Sauvignon Blanc 750ml", Category = "Wine", CountryOfOrigin = "France", Price = 28, Quantity = 7, Notes = "White Wine" },
+        new Product { Id = 21, Image = "Chardonnay.png", Name = "Chardonnay 750ml", Category = "Wine", CountryOfOrigin = "Austria", Price = 23, Quantity = 4, Notes = "White Wine" },
+        new Product { Id = 22, Image = "Primitivo.png", Name = "Primitivo 750 ml", Category = "Wine", CountryOfOrigin = "Italy", Price = 34, Quantity = 0, Notes = "Red Wine" },
+        new Product { Id = 23, Image = "Rioja_750ml.png", Name = "Rioja 750ml", Category = "Wine", CountryOfOrigin = "Spain", Price = 31, Quantity = 7, Notes = "Red Wine" },
+        new Product { Id = 24, Image = "Staropramen.png", Name = "Staropramen 500ml", Category = "Beer", CountryOfOrigin = "Czech Republic", Price = 3, Quantity = 20 },
+        new Product { Id = 25, Image = "Heineken.png", Name = "Heineken Zero 500ml", Category = "Beer", CountryOfOrigin = "Netherlands", Price = 3.4, Quantity = 6, Notes = "Non-alcholic beer" },
+        new Product { Id = 26, Image = "Leffe.png", Name = "Leffe 330ml", Category = "Beer", CountryOfOrigin = "Belgium", Price = 7.8, Quantity = 4 },
+        new Product { Id = 27, Image = "Toblerone.png", Name = "Toblerone 100g", Category = "Sweets", CountryOfOrigin = "Switzerland", Price = 5.1, Quantity = 15 },
+        new Product { Id = 28, Image = "Lindt.png", Name = "Lindt 300g", Category = "Sweets", CountryOfOrigin = "Switzerland", Price = 12, Quantity = 3 },
+        new Product { Id = 29, Image = "Pogues_700ml.png", Name = "Pogues 700ml", Category = "Spirits", CountryOfOrigin = "Ireland", Price = 24, Quantity = 6, Notes = "Whiskey" },
+        new Product { Id = 30, Image = "Beefeater_700ml.png", Name = "Beefeater pink gin 700ml", Category = "Spirits", CountryOfOrigin = "UK", Price = 23, Quantity = 0, Notes = "Gin" }
+    };
+}
+

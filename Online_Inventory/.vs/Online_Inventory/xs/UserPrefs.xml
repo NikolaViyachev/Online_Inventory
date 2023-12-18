@@ -1,4 +1,28 @@
 ﻿<Properties StartupConfiguration="{2B00C3A6-D345-4DAE-A476-F9051C195E48}|https">
-  <MonoDevelop.Ide.ItemProperties.Online__Inventory FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Online__Inventory PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Online_Inventory/Pages/Counter.razor">
+    <Files>
+      <File FileName="Online_Inventory/Pages/Index.razor" Line="11" Column="1" />
+      <File FileName="Online_Inventory/Pages/Counter.razor" Line="5" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Online_Inventory">
+            <Node name="Online_Inventory">
+              <Node name="Data" selected="True" />
+              <Node name="Pages" expanded="True" />
+              <Node name="Shared" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
